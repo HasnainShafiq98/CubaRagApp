@@ -12,17 +12,20 @@ Streamlit for UI: Interactive web-based interface for user-friendly interactions
 
 LangSmith for Observability: Tracks queries and debugging logs for better monitoring.
 
+Data Pipeline & Scraping: Automated data extraction and processing for up-to-date information.
+_________________________________________________________________
 📂 Project Structure
-CubaTravelChatbot/
-│── config.env          # (Not uploaded - contains API keys)
-│── app.py             # Streamlit frontend
-│── rag_chatbot.py     # Chatbot logic with MistralAI & Pinecone
-│── data_pipeline.py   # Data pipeline for preprocessing & indexing
-│── data_scraper.py    # Web scraper for travel-related information
-│── requirements.txt   # Required dependencies
-│── README.md         # Documentation
-│── .gitignore         # Prevents sensitive files from being uploaded
 
+CubaTravelChatbot/
+│── config.env        # (Not uploaded - contains API keys)
+│── app.py           # Streamlit frontend
+│── rag_chatbot.py   # Chatbot logic with MistralAI & Pinecone
+│── data_pipeline.py # Data pipeline for preprocessing & indexing
+│── data_scraper.py  # Web scraper for travel-related information
+│── requirements.txt # Required dependencies
+│── README.md        # Documentation
+│── .gitignore       # Prevents sensitive files from being uploaded
+_________________________________________________________________
 🔧 Setup & Run
 
 1️⃣ Clone the Repository
@@ -55,7 +58,7 @@ python rag_chatbot.py
 6️⃣ Start the Frontend
 
 streamlit run app.py
-
+_________________________________________________________________
 🛠 How It Works
 
 🔹 Data Scraping & Pipeline
@@ -77,7 +80,7 @@ Retrieve Relevant Chunks: Pinecone retrieves the most relevant travel informatio
 Generate Response: MistralAI uses the retrieved information to generate an AI-powered response.
 
 Display Response: The final answer is displayed in the Streamlit UI.
-
+_________________________________________________________________
 📜 API Keys & Configuration
 
 Environment Variables (Stored in config.env):
@@ -88,6 +91,7 @@ MISTRALAI_API_KEY: API key for MistralAI text generation.
 
 HF_TOKEN: Hugging Face token to download the Mistral tokenizer.
 
+_________________________________________________________________
 🎯 Future Improvements
 
 Enhance Retrieval: Use rerankers for better relevance.
