@@ -44,7 +44,9 @@ pip install -r requirements.txt
 Create a config.env file in the root directory and add:
 
 PINECONE_API_KEY=your-pinecone-api-key
+
 MISTRALAI_API_KEY=your-mistral-api-key
+
 HF_TOKEN=your-huggingface-token
 
 4️⃣ Run the Data Pipeline
@@ -87,7 +89,9 @@ Environment Variables (Stored in config.env):
 
 PINECONE_API_KEY: API key for Pinecone vector database.
 
+
 MISTRALAI_API_KEY: API key for MistralAI text generation.
+
 
 HF_TOKEN: Hugging Face token to download the Mistral tokenizer.
 
